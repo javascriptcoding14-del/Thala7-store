@@ -44,3 +44,4 @@ Or:
 
 - This is a static website, so no server or backend is needed.
 - Just open the HTML files in a browser to see the pages.
+# Thala7-store
