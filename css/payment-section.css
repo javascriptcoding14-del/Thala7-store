@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap:2rem;
+    height:100vh;
+}
+.left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color:white ;
+    padding:4rem;
+    height:100%;
+    width:fit-content;
+}
+.left p{
+    font-size: 0.8rem;
+    color:lightgray;
+    margin-bottom:1.3rem;
+}
+.left h2{
+    font-size:1.1rem;
+    color:#575454;
+     margin-bottom:0.5rem;
+}
+.left label{
+    font-size:0.8rem;
+}
+.left input{
+    padding:0.7rem 2rem;
+    width:18rem;
+    background-color:whitesmoke;
+    border:none;
+    border-radius: 0.5rem;
+    margin-bottom:1rem ;
+    width:24rem;
+}
+.left input::placeholder{
+    font-size: 0.6rem;
+    color:lightgray;
+}
+.left-box{
+    height:fit-content;
+    width:24rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:0.8rem;
+    border:1px solid #ddd;
+    border-radius: 1.8rem;;
+}
+.bank-cards{
+    display:flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+.bank-cards div{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding:0.8rem;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:0.5rem;
+    border-radius: 0.8rem;
+    color:#575454;
+    width:4.9rem;
+    height: fit-content;
+
+}
+.bank-cards .cards{
+    color:orange;
+    border: 1px solid orange;
+}
+.bank-cards .dots{
+    height:4.5rem;
+    width:38px;
+    padding:26px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    max-width: 100%;
+}
+form input{
+    max-width:95%;
+}
+.form-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.form-group1{
+     width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form-group1 div{
+    flex:1;
+    width:50%;
+}
+.right{
+    flex:1;
+    font-size:0.8rem;
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width:fit-content;
+    background-color: whitesmoke;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+}
+.right h2{
+    color: #575454;
+    margin-bottom: 1.5rem;
+}
+.cuppon-container{
+    background-color: white;
+    border-radius:0.8rem;
+     box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+     padding:1.3rem;
+     line-height: 1.4rem;
+     width:fit-content
+}
+.cuppon-container label{
+    display: block;
+}
+.cuppon-container input{
+    padding:0.6rem 0.9rem;
+    border:0.8px solid #ddd;
+    border-radius: 0.5rem;
+    width:9rem;
+    margin:0 1rem 1.2rem 0;
+}
+.cuppon-container input::placeholder {
+    color:#ddd;
+    font-size: 14px;
+}
+.cuppon-container a{
+   background-color:blue;
+   text-decoration: none;
+   padding:0.7rem 0.7rem;
+   border-radius: 0.4rem;
+   color: white;
+   margin:0 1rem 1.2rem 0;
+}
+.cuppon-container .price{
+    display: flex;
+    color:#ddd;
+    justify-content: space-between;
+    padding-bottom: 0.6rem;
+}
+.cuppon-container .total-price{
+    display: flex;
+    justify-content: space-between;
+}
+.pay-btn {
+    color:white;
+    background-color:orange ;
+    text-decoration: none;
+    width:20rem;
+    padding:0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition:all 0.3s ease;
+}
+.pay-btn:hover{
+    transform: translateY(-2px);
+    background-color:rgba(255, 166, 0, 0.486); ;
+}
+.payment-methods{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    padding:0 50px 0;
+}
+
+.payment-methods img{
+    height:30px;
+    width:auto;
+}
+
+@media(max-width:768px){
+    body{
+        gap:1rem;
+    }
+    .left{
+        padding:1rem;
+    }
+    .left-box, .left input{
+        width:20rem;
+    }
+
+}
+@media(max-width:375px){
+     body{
+        gap:1rem;
+        flex-direction: column;
+        padding: 0.5rem;
+    
+    }
+    .left{
+        padding:0.5rem;
+    }
+    .right{
+        padding:0.5rem;
+    }
+
+
+}
